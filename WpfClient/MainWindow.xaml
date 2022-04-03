@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfClient"
+        mc:Ignorable="d"
+        Title="Клиент" Height="450" Width="800">
+    <Grid Background ="#778899">
+        <Border MinWidth="400" Margin="15" Padding="30" MaxWidth="550"  Background="#778899">
+            <StackPanel>
+                <TextBlock>Предыдущее сообщение</TextBlock>
+                <TextBox x:Name="InfoSctream" Foreground="#778899"></TextBox>
+                <TextBlock>Ввод сообщения от клиента</TextBlock>
+                <TextBox x:Name="ClientText" Foreground="#778899" ></TextBox>
+                <Button Content="Отправить" Margin="0 20" FontWeight="Bold"  Background="Green" Foreground="Black" BorderBrush="Black" Click="Button_Send"/>
+                <Button Content="Подключить сервер" Margin="0 20" FontWeight="Bold"  Background="Yellow" Foreground="Black" BorderBrush="Black" Click="Button_Connect"/>
+            </StackPanel>
+            
+        </Border>
+        
+    </Grid>
+</Window>
